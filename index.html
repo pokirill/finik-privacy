@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Финик — Политика конфиденциальности / Privacy Policy</title>
+    <style>
+        :root {
+            --bg: #0d0d0d;
+            --card: #1a1a1a;
+            --accent: #4ecdc4;
+            --text: #e0e0e0;
+            --muted: #888;
+            --border: #2a2a2a;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            padding: 0 16px;
+        }
+        .container { max-width: 720px; margin: 0 auto; padding: 48px 0 80px; }
+        .logo { font-size: 48px; text-align: center; margin-bottom: 8px; }
+        h1 {
+            text-align: center;
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .subtitle {
+            text-align: center;
+            color: var(--muted);
+            margin-bottom: 32px;
+            font-size: 14px;
+        }
+        .lang-switch {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 40px;
+        }
+        .lang-switch button {
+            background: var(--card);
+            border: 1px solid var(--border);
+            color: var(--text);
+            padding: 8px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+        .lang-switch button.active {
+            background: var(--accent);
+            color: var(--bg);
+            border-color: var(--accent);
+            font-weight: 600;
+        }
+        .section {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 16px;
+        }
+        h2 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--accent);
+        }
+        p, li { font-size: 15px; margin-bottom: 8px; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 6px; }
+        a { color: var(--accent); }
+        .effective {
+            text-align: center;
+            color: var(--muted);
+            font-size: 13px;
+            margin-top: 32px;
+        }
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🐿️</div>
+        <h1 id="title">Финик</h1>
+        <div class="subtitle" id="subtitle">Политика конфиденциальности</div>
+
+        <div class="lang-switch">
+            <button id="btn-ru" class="active" onclick="switchLang('ru')">Русский</button>
+            <button id="btn-en" onclick="switchLang('en')">English</button>
+        </div>
+
+        <!-- RUSSIAN -->
+        <div id="lang-ru">
+            <div class="section">
+                <h2>1. Общие положения</h2>
+                <p>Настоящая Политика конфиденциальности описывает, как мобильное приложение <strong>Финик</strong> (далее — Приложение) собирает, использует и защищает данные пользователей.</p>
+                <p>Используя Приложение, вы соглашаетесь с условиями данной Политики.</p>
+            </div>
+
+            <div class="section">
+                <h2>2. Какие данные мы собираем</h2>
+                <p><strong>Финансовые данные</strong> (вводятся вами):</p>
+                <ul>
+                    <li>Доходы, расходы, категории трат</li>
+                    <li>Финансовые цели и их параметры</li>
+                    <li>Кредиты и регулярные платежи</li>
+                    <li>Транзакции (суммы, категории, названия)</li>
+                </ul>
+                <p><strong>Технические данные</strong> (собираются автоматически):</p>
+                <ul>
+                    <li>Идентификатор установки (UUID, не привязан к личности)</li>
+                    <li>Модель устройства, версия iOS</li>
+                    <li>Язык и часовой пояс</li>
+                    <li>Анонимные события использования приложения</li>
+                </ul>
+                <p><strong>Мы НЕ собираем:</strong></p>
+                <ul>
+                    <li>Имена, email, телефоны, адреса</li>
+                    <li>Номера банковских счетов или карт</li>
+                    <li>Данные геолокации</li>
+                    <li>Контакты, фото, календарь</li>
+                    <li>Биометрические данные</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>3. Как мы используем данные</h2>
+                <ul>
+                    <li><strong>Работа приложения</strong> — расчёт бюджета, прогнозов, планов достижения целей</li>
+                    <li><strong>Синхронизация</strong> — сохранение данных на сервере для резервного копирования</li>
+                    <li><strong>AI-ассистент</strong> — обработка запросов к финансовому агенту (данные передаются LLM-провайдеру для генерации ответов)</li>
+                    <li><strong>Аналитика</strong> — анонимные события для улучшения продукта</li>
+                    <li><strong>Обратная связь</strong> — обработка ваших обращений в поддержку</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>4. Передача данных третьим лицам</h2>
+                <p>Мы передаём данные только в следующих случаях:</p>
+                <ul>
+                    <li><strong>Серверная инфраструктура</strong> — для синхронизации и резервного копирования ваших финансовых данных</li>
+                    <li><strong>LLM-провайдеры</strong> — при использовании AI-ассистента контекст запроса передаётся провайдеру языковой модели для генерации ответа</li>
+                </ul>
+                <p>Мы не продаём и не передаём данные рекламным сетям, брокерам данных или иным третьим лицам.</p>
+            </div>
+
+            <div class="section">
+                <h2>5. Хранение и защита</h2>
+                <ul>
+                    <li>Финансовые данные хранятся <strong>локально на устройстве</strong> в зашифрованной базе данных</li>
+                    <li>Синхронизация с сервером происходит по защищённому каналу (HTTPS/TLS)</li>
+                    <li>Токены авторизации хранятся в iOS Keychain</li>
+                    <li>Идентификация анонимна — на основе UUID установки, без привязки к личности</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>6. Ваши права</h2>
+                <ul>
+                    <li>Вы можете <strong>удалить все данные</strong>, удалив приложение с устройства</li>
+                    <li>Вы можете запросить удаление серверных данных, написав нам на email ниже</li>
+                    <li>Вы можете не использовать AI-ассистента, чтобы данные не передавались LLM-провайдеру</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>7. Дети</h2>
+                <p>Приложение не предназначено для лиц младше 16 лет. Мы сознательно не собираем данные детей.</p>
+            </div>
+
+            <div class="section">
+                <h2>8. Изменения политики</h2>
+                <p>Мы можем обновлять данную Политику. Актуальная версия всегда доступна по этому адресу. Продолжая использовать Приложение после изменений, вы принимаете обновлённые условия.</p>
+            </div>
+
+            <div class="section">
+                <h2>9. Контакты</h2>
+                <p>По вопросам конфиденциальности и удаления данных:</p>
+                <p><strong>Email:</strong> <a href="mailto:popov.kirill.a@yandex.ru">popov.kirill.a@yandex.ru</a></p>
+            </div>
+        </div>
+
+        <!-- ENGLISH -->
+        <div id="lang-en" class="hidden">
+            <div class="section">
+                <h2>1. Introduction</h2>
+                <p>This Privacy Policy describes how the <strong>Finik</strong> mobile application (the "App") collects, uses, and protects user data.</p>
+                <p>By using the App, you agree to the terms of this Policy.</p>
+            </div>
+
+            <div class="section">
+                <h2>2. Data We Collect</h2>
+                <p><strong>Financial data</strong> (provided by you):</p>
+                <ul>
+                    <li>Income, expenses, spending categories</li>
+                    <li>Financial goals and their parameters</li>
+                    <li>Loans and recurring payments</li>
+                    <li>Transactions (amounts, categories, names)</li>
+                </ul>
+                <p><strong>Technical data</strong> (collected automatically):</p>
+                <ul>
+                    <li>Installation identifier (UUID, not linked to your identity)</li>
+                    <li>Device model, iOS version</li>
+                    <li>Language and timezone</li>
+                    <li>Anonymous app usage events</li>
+                </ul>
+                <p><strong>We do NOT collect:</strong></p>
+                <ul>
+                    <li>Names, emails, phone numbers, addresses</li>
+                    <li>Bank account or card numbers</li>
+                    <li>Location data</li>
+                    <li>Contacts, photos, calendar</li>
+                    <li>Biometric data</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>3. How We Use Data</h2>
+                <ul>
+                    <li><strong>App functionality</strong> — budget calculations, forecasts, goal planning</li>
+                    <li><strong>Sync</strong> — server backup of your financial data</li>
+                    <li><strong>AI assistant</strong> — processing queries to the financial agent (data is sent to an LLM provider to generate responses)</li>
+                    <li><strong>Analytics</strong> — anonymous events to improve the product</li>
+                    <li><strong>Feedback</strong> — processing your support requests</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>4. Data Sharing</h2>
+                <p>We share data only in the following cases:</p>
+                <ul>
+                    <li><strong>Server infrastructure</strong> — for syncing and backing up your financial data</li>
+                    <li><strong>LLM providers</strong> — when using the AI assistant, query context is sent to a language model provider to generate a response</li>
+                </ul>
+                <p>We do not sell or share data with advertising networks, data brokers, or other third parties.</p>
+            </div>
+
+            <div class="section">
+                <h2>5. Storage and Security</h2>
+                <ul>
+                    <li>Financial data is stored <strong>locally on your device</strong> in an encrypted database</li>
+                    <li>Server sync uses encrypted channels (HTTPS/TLS)</li>
+                    <li>Authorization tokens are stored in the iOS Keychain</li>
+                    <li>Identification is anonymous — based on installation UUID, not linked to personal identity</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>6. Your Rights</h2>
+                <ul>
+                    <li>You can <strong>delete all data</strong> by removing the app from your device</li>
+                    <li>You can request server data deletion by contacting us at the email below</li>
+                    <li>You can choose not to use the AI assistant to prevent data from being sent to an LLM provider</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>7. Children</h2>
+                <p>The App is not intended for persons under the age of 16. We do not knowingly collect data from children.</p>
+            </div>
+
+            <div class="section">
+                <h2>8. Changes to This Policy</h2>
+                <p>We may update this Policy. The current version is always available at this address. By continuing to use the App after changes, you accept the updated terms.</p>
+            </div>
+
+            <div class="section">
+                <h2>9. Contact</h2>
+                <p>For privacy and data deletion inquiries:</p>
+                <p><strong>Email:</strong> <a href="mailto:popov.kirill.a@yandex.ru">popov.kirill.a@yandex.ru</a></p>
+            </div>
+        </div>
+
+        <div class="effective" id="effective">Дата вступления в силу: 5 апреля 2026 г.</div>
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            document.getElementById('lang-ru').classList.toggle('hidden', lang !== 'ru');
+            document.getElementById('lang-en').classList.toggle('hidden', lang !== 'en');
+            document.getElementById('btn-ru').classList.toggle('active', lang === 'ru');
+            document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+            document.getElementById('subtitle').textContent =
+                lang === 'ru' ? 'Политика конфиденциальности' : 'Privacy Policy';
+            document.getElementById('effective').textContent =
+                lang === 'ru' ? 'Дата вступления в силу: 5 апреля 2026 г.' : 'Effective date: April 5, 2026';
+        }
+    </script>
+</body>
+</html>
