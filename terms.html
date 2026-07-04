@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кубышка — Условия использования / Terms of Use</title>
+    <style>
+        :root { --bg:#0d0d0d; --card:#1a1a1a; --accent:#4ecdc4; --text:#e0e0e0; --muted:#888; --border:#2a2a2a; }
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; background:var(--bg); color:var(--text); line-height:1.7; padding:0 16px; }
+        .container { max-width:720px; margin:0 auto; padding:48px 0 80px; }
+        .logo { font-size:48px; text-align:center; margin-bottom:8px; }
+        h1 { text-align:center; font-size:28px; font-weight:700; margin-bottom:4px; }
+        .subtitle { text-align:center; color:var(--muted); margin-bottom:32px; font-size:14px; }
+        .lang-switch { display:flex; justify-content:center; gap:8px; margin-bottom:40px; }
+        .lang-switch button { background:var(--card); border:1px solid var(--border); color:var(--text); padding:8px 20px; border-radius:8px; cursor:pointer; }
+        .lang-switch button.active { background:var(--accent); color:#0d0d0d; font-weight:600; }
+        .section { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:24px; margin-bottom:16px; }
+        h2 { font-size:18px; margin-bottom:12px; color:var(--accent); }
+        p, li { font-size:15px; color:var(--text); margin-bottom:8px; }
+        ul { padding-left:20px; }
+        a { color:var(--accent); }
+        .hidden { display:none; }
+        .effective { text-align:center; color:var(--muted); font-size:13px; margin-top:32px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🐿️</div>
+        <h1>Кубышка</h1>
+        <div class="subtitle" id="subtitle">Условия использования</div>
+
+        <div class="lang-switch">
+            <button id="btn-ru" class="active" onclick="switchLang('ru')">Русский</button>
+            <button id="btn-en" onclick="switchLang('en')">English</button>
+        </div>
+
+        <div id="lang-ru">
+            <div class="section">
+                <h2>1. Общие положения</h2>
+                <p>Настоящие Условия регулируют использование мобильного приложения <strong>Кубышка</strong> (далее — Приложение). Устанавливая и используя Приложение, вы соглашаетесь с этими Условиями.</p>
+            </div>
+            <div class="section">
+                <h2>2. Назначение приложения</h2>
+                <p>Приложение помогает планировать личный бюджет: ставить финансовые цели, учитывать доходы и расходы, получать прогнозы и советы AI-ассистента.</p>
+                <p><strong>Приложение не является финансовой, инвестиционной или юридической консультацией.</strong> Все расчёты, прогнозы и ответы AI-ассистента носят информационный характер. Решения о своих финансах вы принимаете самостоятельно.</p>
+            </div>
+            <div class="section">
+                <h2>3. Бесплатное использование</h2>
+                <p>Приложение бесплатно, не содержит встроенных покупок и подписок и не требует регистрации.</p>
+            </div>
+            <div class="section">
+                <h2>4. AI-ассистент</h2>
+                <p>Ответы AI-ассистента генерируются языковой моделью и могут содержать неточности. Не полагайтесь на них как на единственный источник при принятии финансовых решений.</p>
+            </div>
+            <div class="section">
+                <h2>5. Ответственность</h2>
+                <p>Приложение предоставляется «как есть». Мы не несём ответственности за финансовые решения, принятые на основе информации из Приложения, а также за возможные убытки, связанные с его использованием.</p>
+            </div>
+            <div class="section">
+                <h2>6. Данные</h2>
+                <p>Обработка данных описана в <a href="index.html">Политике конфиденциальности</a>.</p>
+            </div>
+            <div class="section">
+                <h2>7. Изменения</h2>
+                <p>Мы можем обновлять эти Условия. Актуальная версия доступна по этому адресу.</p>
+            </div>
+            <div class="section">
+                <h2>8. Контакты</h2>
+                <p><strong>Email:</strong> <a href="mailto:popov.kirill.a@yandex.ru">popov.kirill.a@yandex.ru</a></p>
+            </div>
+        </div>
+
+        <div id="lang-en" class="hidden">
+            <div class="section">
+                <h2>1. Introduction</h2>
+                <p>These Terms govern the use of the <strong>Kubyshka</strong> mobile application (the "App"). By installing and using the App, you agree to these Terms.</p>
+            </div>
+            <div class="section">
+                <h2>2. Purpose</h2>
+                <p>The App helps you plan a personal budget: set financial goals, track income and expenses, and get forecasts and AI assistant tips.</p>
+                <p><strong>The App does not provide financial, investment, or legal advice.</strong> All calculations, forecasts, and AI assistant responses are informational only. You make your own financial decisions.</p>
+            </div>
+            <div class="section">
+                <h2>3. Free to Use</h2>
+                <p>The App is free, contains no in-app purchases or subscriptions, and requires no registration.</p>
+            </div>
+            <div class="section">
+                <h2>4. AI Assistant</h2>
+                <p>AI assistant responses are generated by a language model and may contain inaccuracies. Do not rely on them as the sole basis for financial decisions.</p>
+            </div>
+            <div class="section">
+                <h2>5. Liability</h2>
+                <p>The App is provided "as is". We are not liable for financial decisions made based on information from the App, or for any losses related to its use.</p>
+            </div>
+            <div class="section">
+                <h2>6. Data</h2>
+                <p>Data processing is described in the <a href="index.html">Privacy Policy</a>.</p>
+            </div>
+            <div class="section">
+                <h2>7. Changes</h2>
+                <p>We may update these Terms. The current version is always available at this address.</p>
+            </div>
+            <div class="section">
+                <h2>8. Contact</h2>
+                <p><strong>Email:</strong> <a href="mailto:popov.kirill.a@yandex.ru">popov.kirill.a@yandex.ru</a></p>
+            </div>
+        </div>
+
+        <div class="effective" id="effective">Дата вступления в силу: 4 июля 2026 г.</div>
+    </div>
+    <script>
+        function switchLang(lang) {
+            document.getElementById('lang-ru').classList.toggle('hidden', lang !== 'ru');
+            document.getElementById('lang-en').classList.toggle('hidden', lang !== 'en');
+            document.getElementById('btn-ru').classList.toggle('active', lang === 'ru');
+            document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+            document.getElementById('subtitle').textContent = lang === 'ru' ? 'Условия использования' : 'Terms of Use';
+            document.getElementById('effective').textContent = lang === 'ru' ? 'Дата вступления в силу: 4 июля 2026 г.' : 'Effective date: July 4, 2026';
+        }
+    </script>
+</body>
+</html>
